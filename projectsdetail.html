@@ -1,0 +1,488 @@
+﻿<!DOCTYPE HTML>
+<!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<!-- begin meta -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- end meta -->
+	
+	<!-- begin CSS -->
+	<link href="style.css" type="text/css" rel="stylesheet" id="main-style">
+	<link href="css/responsive.css" type="text/css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>  
+	<!--[if IE]> <link href="css/ie.css" type="text/css" rel="stylesheet"> <![endif]-->
+	<link href="css/colors/green.css" type="text/css" rel="stylesheet" id="color-style">
+    <link href="css/jassor.css" type="text/css" rel="stylesheet" id="color-style">
+    <!-- end CSS -->
+    
+    <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link rel="stylesheet" href="css/projectdetailstyle.css"  />
+	
+    
+    
+	<!-- begin JS -->
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+     <!-- jQuery -->
+     <!-- sliderbegin -->
+      <!-- sliderbegin -->
+     
+      <!-- slider end -->
+      <!-- slider end -->
+    <script src="js/ie.js" type="text/javascript"></script> <!-- IE detection -->
+    <script src="js/jquery.easing.1.3.js" type="text/javascript"></script> <!-- jQuery easing -->
+	<script src="js/modernizr.custom.js" type="text/javascript"></script> <!-- Modernizr -->
+    <!--[if IE 8]>
+    <script src="js/respond.min.js" type="text/javascript"></script> 
+    <script src="js/selectivizr-min.js" type="text/javascript"></script> 
+    <![endif]--> 
+    <script src="js/ddlevelsmenu.js" type="text/javascript"></script> <!-- drop-down menu -->
+    <script type="text/javascript"> <!-- drop-down menu -->
+        ddlevelsmenu.setup("nav", "topbar");
+    </script>
+    <script src="js/tinynav.min.js" type="text/javascript"></script> <!-- tiny nav -->
+    <script src="js/jquery.akordeon.js" type="text/javascript"></script>
+    <script src="js/jquery.validate.min.js" type="text/javascript"></script> <!-- form validation -->
+    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script> <!-- slider -->
+    <script src="js/jquery.jcarousel.min.js" type="text/javascript"></script> <!-- carousel -->
+    <script src="js/jquery.ui.totop.min.js" type="text/javascript"></script> <!-- scroll to top -->
+    <script src="js/jquery.fitvids.js" type="text/javascript"></script> <!-- responsive video embeds -->
+    <script src="js/jquery.tweet.js" type="text/javascript"></script> <!-- Twitter widget -->
+    <script src="js/jquery.tipsy.js" type="text/javascript"></script> <!-- tooltips -->
+	<script type="text/javascript" src="js/revslider.jquery.themepunch.plugins.min.js"></script> <!-- swipe gestures --> 
+    <script src="js/jquery.fancybox.pack.js" type="text/javascript"></script> <!-- lightbox -->
+    <script src="js/jquery.fancybox-media.js" type="text/javascript"></script> <!-- lightbox -->
+    <script src="js/froogaloop.min.js" type="text/javascript"></script> <!-- video manipulation -->
+    <script src="js/custom.js" type="text/javascript"></script> <!-- jQuery initialization -->
+    <!-- end JS -->
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.akordeon').akordeon();
+        });
+    </script>
+      <!-- sliderbegin -->
+      <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    
+      <!-- slider end -->
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $UISearchMode: 0,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $Loop: 2,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+                    $SpacingX: 3,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 3,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                    $DisplayPieces: 3,                              //[Optional] Number of pieces to display, default value is 1
+                    $ParkingPosition: 204,                          //[Optional] The offset position to park thumbnail,
+
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                        $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                        $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                        $Steps: 6                                       //[Optional] Steps to go for each navigation request, default value is 1
+                    }
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 420));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    <script type="text/javascript" src="js/scriptpop.js"></script>
+    <link href="css/popup.css" type="text/css" rel="stylesheet">
+	<title>Hirise Homes-Villas in Calicut</title>
+</head>
+
+<body class="wide">
+<!-- begin container -->
+<div id="wrap">
+	<!-- begin header -->
+    <header id="header">
+    	<div class="container clearfix">
+    	<!-- begin logo -->
+        <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="Inceptio"></a></h1>
+        <!-- end logo -->
+        
+        <!-- begin navigation wrapper -->
+        <div class="nav-wrap clearfix">
+        
+        <!-- begin search form -->
+        <form id="search-form" action="search.php" method="get">
+            <input id="s" type="text" name="s" placeholder="Search &hellip;" style="display: none;">
+            <input id="search-submit" type="submit" name="search-submit" value="Search">
+        </form>
+        <!-- end search form -->
+
+        <!-- begin navigation -->
+        <nav id="nav">
+            <ul id="navlist" class="clearfix">
+                <li ><a href="index.html" >Home</a>
+                                    </li>
+                <li class="current"><a href="project.html">Projects</a>
+                    
+                <li><a href="service.html">Service</a>
+                   
+                </li>
+                <li><a href="about.html" >About</a>
+                    
+                </li><li><a href="latestnewscomb.html" >News & Events</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- end navigation -->
+        
+        </div>
+        <!-- end navigation wrapper -->
+        </div>
+    </header>
+    <!-- end header -->
+	
+    <!-- begin page title -->
+    <section id="page-title">
+    	<div class="container clearfix">
+            <h1>Projects  </h1>
+            <nav id="breadcrumbs">
+                <ul>
+                    <li><a href="index.html">Home</a> &rsaquo;</li>
+                    <li><a href="projects.html">Project</a> &rsaquo;</li>
+           
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- begin page title -->
+    
+    <!-- begin content -->
+    <section id="content">
+    <!--------------begin green bar---------------->
+    	<div class="greenbar">
+    	<p class="appartment">Focus Appartment</p>
+        <p class="location_name"><img class="loaction" src="images/projectdetail/location.png" > Near Malabar Christian College, Wayanad Road, Calicut</p>
+        <a class="brochure" href=""> Brochure</a>
+    	</div>
+        <!-------------end green bar----------------->
+        <div class="fullwid">
+         <!-------------begin left bar----------------->
+        <div class="left">
+          <!-------------begin left discription bar----------------->
+          <div class="discript">
+            
+            <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non felis at lacus finibus fringilla. Sed gravida rhoncus est in finibus. Phasellus rhoncus mi risus, vitae mattis ipsum blandit sed. Nunc eu tempor magna. Vivamus consequat facilisis lectus eget egestas. Donec laoreet, elit at suscipit gravida, metus purus maximus eros, id pellentesque lorem neque vitae eros. Mauris ac enim risus. Sed ut ex efficitur, mollis nunc elementum, fringilla ex. Nunc ultricies aliquam dui in molestie. Nam neque mauris, ornare eget tincidunt eu, porta at orci. Sed commodo, augue vitae vestibulum consectetur, quam purus rhoncus arcu, nec accumsan augue magna a ligula. Suspendisse eu nunc felis. Donec nec augue urna. Cras ac erat risus.
+</p>
+<p>
+Proin volutpat lobortis massa vel tempor. Integer facilisis eget magna vel tristique. Sed semper sollicitudin nisl at pulvinar. Nunc sed vehicula neque. Morbi a urna ante. Aliquam quis magna erat. Morbi at enim lectus. Sed at mattis diam. Vestibulum eleifend magna turpis. Integer dapibus nisi sit amet sodales molestie.
+</p>
+<p>
+Vivamus vestibulum lorem vel ante lacinia rutrum. Curabitur eu odio sapien. Integer a dui odio. Proin eleifend ante vitae venenatis varius. Etiam lobortis et libero quis bibendum. Mauris gravida porttitor ante vel cursus. Maecenas at ante odio. Mauris tempus quam at felis vestibulum finibus.
+</p>
+            
+            </div>
+             <!-------------end discription bar----------------->
+              <!-------------begins  left tab bar----------------->
+            <div class="tabb">
+          <div class="akordeon">
+          <div class="akordeon-item">
+              <div class="akordeon-item-head">
+                  <div class="akordeon-item-head-container">
+                      <div class="akordeon-heading">
+                          Project Overview
+                      </div>
+                  </div>
+              </div>
+              <div class="akordeon-item-body">
+                  <div class="akordeon-item-content">
+                    Contents here
+                  </div>
+              </div>
+          </div>
+          <div class="akordeon-item">
+              <div class="akordeon-item-head">
+                  <div class="akordeon-item-head-container">
+                      <div class="akordeon-heading">
+                          Specification
+                      </div>
+                  </div>
+              </div>
+              <div class="akordeon-item-body">
+                  <div class="akordeon-item-content">
+                    Contents here
+                  </div>
+              </div>
+          </div>
+          <div class="akordeon-item">
+              <div class="akordeon-item-head">
+                  <div class="akordeon-item-head-container">
+                      <div class="akordeon-heading">
+                          Ameneties
+                      </div>
+                  </div>
+              </div>
+              <div class="akordeon-item-body">
+                  <div class="akordeon-item-content">
+                    Contents here
+                  </div>
+              </div>
+          </div>
+          <div class="akordeon-item">
+              <div class="akordeon-item-head">
+                  <div class="akordeon-item-head-container">
+                      <div class="akordeon-heading">
+                          Floor Plan                      </div>
+                  </div>
+              </div>
+              <div class="akordeon-item-body">
+                  <div class="akordeon-item-content">
+                    Contents here
+                  </div>
+              </div>
+          </div>
+          <div class="akordeon-item">
+              <div class="akordeon-item-head">
+                  <div class="akordeon-item-head-container">
+                      <div class="akordeon-heading">
+                          Status                      </div>
+                  </div>
+              </div>
+              <div class="akordeon-item-body">
+                  <div class="akordeon-item-content">
+                    Contents here
+                  </div>
+              </div>
+          </div>
+          
+          
+          </div>
+ 
+        
+      
+      
+            </div>
+             <!-------------end left tab bar----------------->
+              <!-------------end left tab bar----------------->
+        </div>
+         <!-------------end left bar----------------->
+          <!-------------begin right bar----------------->
+        <div class="right">
+        
+           <div id="slider1_container" style="position: relative; width: 720px;
+        height: 480px; overflow: hidden;  margin-top: 2%;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 720px; height: 480px;
+            overflow: hidden;">
+            <div>
+                <img u="image" src="img/travel/01.jpg" />
+                <img u="thumb" src="img/travel/thumb-01.jpg" />
+            </div>
+            <div>
+                <img u="image" src="img/travel/02.jpg" />
+                <img u="thumb" src="img/travel/thumb-02.jpg" />
+            </div>
+            <div>
+                <img u="image" src="img/travel/03.jpg" />
+                <img u="thumb" src="img/travel/thumb-03.jpg" />
+            </div>
+           
+        </div>
+        
+        <!-- Thumbnail Navigator Skin Begin -->
+        <div u="thumbnavigator" class="jssort07" style="position: absolute; width: 720px; height: 100px; left: 0px; bottom: 0px; overflow: hidden; ">
+            <div style=" background-color: #000; filter:alpha(opacity=30); opacity:.3; width: 100%; height:100%;"></div>
+            <!-- Thumbnail Item Skin Begin -->
+           
+            <div u="slides" style="cursor: move;">
+                <div u="prototype" class="p" style="POSITION: absolute; WIDTH: 99px; HEIGHT: 66px; TOP: 0; LEFT: 0;">
+                    <div u="thumbnailtemplate" class="i" style="position:absolute;"></div>
+                    <div class="o">
+                    </div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+            <!-- Arrow Navigator Skin Begin -->
+           
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora11l" style="width: 37px; height: 37px; top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora11r" style="width: 37px; height: 37px; top: 123px; right: 8px">
+            </span>
+            <!-- Arrow Navigator Skin End -->
+        </div>
+        <!-- ThumbnailNavigator Skin End -->
+        
+        <!-- Trigger -->
+    </div>
+    <!-- Jssor Slider End -->
+    <!-- Jssor Slider End -->
+    <!-- Jssor Slider End -->
+      <!-- location enqury button End -->
+    <div class="locenq">
+     <a class="enqu popup1" href="">Enquiry </a> <a class="locc popup" href="">Location </a>
+    </div>
+    <!-- location enqury button End -->
+      <!-------------------------------------------------------->  
+  <!--------------------------------------------------------> 
+  <!--------------------------------------------------------> 
+  <!--------------------------------------------------------> 
+    <div id="Popup"> 
+    	
+        <div class="close"></div>
+       	<span class="popup_tooltip">Press Esc to close <span class="arrow"></span></span>
+		<div id="popup_content">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15650.191811742023!2d75.81800848374607!3d11.294603041431436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65c1891dc7fc5%3A0x50ac004ee7d8ec9!2sAteta!5e0!3m2!1sen!2sin!4v1426844584960" width="780" height="400" frameborder="0" style="border:0"></iframe>
+          
+        </div>
+    
+    </div>
+    
+	<div class="loader"></div>
+   	<div id="backgroundPopup"></div>
+    
+    
+  <!-------------------------------------------------------->  
+  <div id="Popup1"> 
+    	
+        <div class="close"></div>
+       	<span class="popup_tooltip">Press Esc to close <span class="arrow"></span></span>
+		<div id="popup_content1">
+        <p>success</p>
+          
+        </div>
+    
+    </div>
+    
+	<div class="loader"></div>
+   	<div id="backgroundPopup"></div>
+  <!--------------------------------------------------------> 
+  <!--------------------------------------------------------> 
+  <!--------------------------------------------------------> 
+ </div>
+         <!-------------end right bar----------------->
+         </div>
+    </section>
+    <!-- end content -->
+    
+      <!-- begin footer -->
+	<footer id="footer">
+    	<!-- begin footer top -->
+        <div id="footer-top">
+        	<div class="container clearfix">
+                <div class="one-fourth">
+                    <div class="widget">
+                        <h3>About</h3>
+									We are specialized in Construction of Independent Houses, Flats/Apartments, Villas, Commercial Buildings, Vasthu Consulting, Preparing Plans,Architectural Drawings, Interior Designing, 3D Elevation and Rendering, Animated Walkthrough, Building Information Modeling</p>                    </div>
+                
+                </div>
+                <div class="one-fourth">
+                    <div class="widget twitter-widget">
+                        <h3>Location</h3>
+                        <div ><iframe width="200" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Moozhikal+West+Bus+Station,+National+Highway+212,+Kozhikode,+Kerala&amp;aq=0&amp;oq=moozhikal&amp;sll=11.25381,75.801696&amp;sspn=0.219205,0.41851&amp;ie=UTF8&amp;hq=&amp;hnear=Moozhikal+West+Bus+Station,+National+Highway+212,+Kozhikode,+Kerala&amp;t=m&amp;z=14&amp;iwloc=lyrftr:m,0x3ba65c410792179f:0x72db298d1fce1378,11.296682,75.833666&amp;ll=11.296682,75.833672&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Moozhikal+West+Bus+Station,+National+Highway+212,+Kozhikode,+Kerala&amp;aq=0&amp;oq=moozhikal&amp;sll=11.25381,75.801696&amp;sspn=0.219205,0.41851&amp;ie=UTF8&amp;hq=&amp;hnear=Moozhikal+West+Bus+Station,+National+Highway+212,+Kozhikode,+Kerala&amp;t=m&amp;z=14&amp;iwloc=lyrftr:m,0x3ba65c410792179f:0x72db298d1fce1378,11.296682,75.833666&amp;ll=11.296682,75.833672" style="color:#0000FF;text-align:left">View Larger Map</a></small></div>
+                    </div>
+                </div>
+                <div class="one-fourth">
+                    <div class="widget newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our email newsletter for useful tips and valuable resources sent out every second Monday.</p>
+                        <div id="newsletter-notification-box-success" class="notification-box notification-box-success" style="display: none;">
+                            <p>You have successfully subscribed to our newsletter.</p>
+                            <a href="#" class="notification-close notification-close-success">x</a>
+                        </div>
+        
+                        <div id="newsletter-notification-box-error" class="notification-box notification-box-error" style="display: none;">
+                            <p>Your email address couldn't be subscribed because a server error occurred. Please try again later.</p>
+                            <a href="#" class="notification-close notification-close-error">x</a>
+                        </div>
+                        <form id="newsletter-form" class="content-form" action="#" method="post">
+                            <input id="newsletter" type="email" name="newsletter" placeholder="Enter your email address &hellip;" class="required">
+                            <input id="subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+                <div class="one-fourth column-last">
+                    <div class="widget contact-info">
+                        <h3>Contact Info</h3>
+                        <div>
+                            <p class="address"><strong>Address:</strong>Moozhikal, Cheruvattakadavu</p>
+                            <p class="phone"><strong>Phone:</strong> 9947893112</p>
+                            <p class="fax"><strong>Mob:</strong> 9745920033</p>
+                            <p class="email"><strong>Email:</strong> <a href="mailto:office@company.com">hirisehomes@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer top -->
+
+        <!-- begin footer bottom -->
+        <div id="footer-bottom">
+        	<div class="container clearfix">
+                <div class="one-half">
+                <p>Copyright &copy; 2013  Created by <a href="http://arthaskills.com/">Artha Skills Solution Pvt.Ltd</a>.</p>
+                </div>
+        
+                <div class="one-half column-last">
+                    <ul class="social-links">
+                        <li class="twitter"><a href="#" title="Twitter" target="_blank">Twitter</a></li>
+                        <li class="facebook"><a href="#" title="Facebook" target="_blank">Facebook</a></li>
+                        <li class="google-plus"><a href="#" title="Google+" target="_blank">Google+</a></li>
+                        <li class="linkedin"><a href="#" title="LinkedIn" target="_blank">LinkedIn</a></li>
+                        <li class="vimeo"><a href="#" title="Vimeo" target="_blank">Vimeo</a></li>
+                        <li class="youtube"><a href="#" title="YouTube" target="_blank">YouTube</a></li>
+                        <li class="skype"><a href="#" title="Skype" target="_blank">Skype</a></li>
+                        <li class="digg"><a href="#" title="Digg" target="_blank">Digg</a></li>
+                        <li class="delicious"><a href="#" title="Delicious" target="_blank">Delicious</a></li>
+                        <li class="tumbler"><a href="#" title="Tumbler" target="_blank">Tumbler</a></li>
+                        <li class="dribbble"><a href="#" title="Dribbble" target="_blank">Dribbble</a></li>
+                        <li class="stumbleupon"><a href="#" title="StumbleUpon" target="_blank">StumbleUpon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end footer bottom -->
+	</footer>
+	<!-- end footer -->  
+</div>
+<!-- end container -->
+</body>
+</html>

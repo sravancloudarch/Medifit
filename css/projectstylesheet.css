@@ -1,0 +1,679 @@
+
+/*----------------------------------------------------
+					PROJECT DETAILS
+----------------------------------------------------*/
+.wc-project-details.banner{
+    width: 100%;
+    height: 237px;
+    position: relative;
+    background: url(../img/bg-project-details.png) no-repeat right center;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-bottom: 1px solid #fff;
+/*    -webkit-box-shadow: 18px 7px 23px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 18px 7px 23px -12px rgba(0,0,0,0.75);
+    box-shadow: 18px 7px 23px -12px rgba(0,0,0,0.75);*/
+    z-index: 2;
+}
+.wc-project-details.banner:before{
+    content: " ";
+    width: 61px;
+    height: 32px;
+    background: url(../img/bg-after-1.png) no-repeat;
+    position: absolute;
+    bottom: -28px;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    /*z-index: 1;*/
+}
+.wc-project-details.banner h2{
+    font-family: 'robotoregular';
+    font-size: 30px;
+    color: #4a3d00;
+    padding-bottom: 20px;
+}
+.wc-project-details.banner p{
+    font-family: 'robotoregular';
+    font-size: 14px;
+    color: #594900;
+    padding-left: 20px;
+    background: url(../img/bg-project-details-location.png) no-repeat;
+    background-position: left center;
+    line-height: 20px
+}
+.wc-project-details.banner>.container>.row>div>.row, .wc-project-details.banner>.container>.row>div>.row>div{
+    margin: 0;
+    padding: 0;
+	height: 156px;
+}
+.wc-project-details.banner>.container>.row>div>.row>div:last-child{
+    padding-left: 15px;
+}
+.wc-project-details.banner .button-wrapp{
+    width: 100%;
+    padding-top: 30px;
+}
+.wc-project-details.banner>.container>.row>div{
+    padding-top: 50px;
+}
+.wc-project-details.banner .button-wrapp a:first-child, .wc-project-details.banner .button-wrapp a:nth-child(2), .wc-project-details.banner .button-wrapp a:last-child{
+    width: 139px;
+    height: 40px;
+    float: left;
+    background: #eb0000;
+    border-radius: 25px;
+    font-family: 'robotomedium';
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+}
+.wc-project-details.banner .button-wrapp a:first-child:hover{
+    background: #333;
+}
+.wc-project-details.banner .button-wrapp a:nth-child(2){
+    width: 160px;
+    background: #fff;
+    font-size: 13px;
+    color: #656565;
+    margin-left: 10px;
+    position: relative;
+    padding-left: 43px;
+}
+.wc-project-details.banner .button-wrapp a:last-child{
+    width: 140px;
+    background: #fff;
+    font-size: 13px;
+    color: #656565;
+    margin-left: 10px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.wc-project-details.banner .button-wrapp a:nth-child(2):hover, .wc-project-details.banner .button-wrapp a:last-child:hover{
+	color:#eb0000;
+}
+.wc-project-details.banner .button-wrapp a:nth-child(2) i, .wc-project-details.banner .button-wrapp a:last-child i{
+    width: 43px;
+    height: 100%;
+    display: block;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/bg-project-details-button-1.png) no-repeat;
+    background-color: #8c7400;
+    background-position: center;
+    vertical-align: middle;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+.wc-project-details.banner .button-wrapp a:nth-child(2) i, .wc-project-details.banner .button-wrapp a:last-child i{
+    width: 43px;
+    height: 100%;
+    display: block;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/bg-project-details-button-1hover.png) no-repeat;
+    background-color: #8c7400;
+    background-position: center;
+    vertical-align: middle;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+.wc-project-details.banner .button-wrapp a:nth-child(2):hover i{
+    width: 43px;
+    height: 100%;
+    display: block;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/bg-project-details-button-1hover.png) no-repeat;
+    background-color: #eb0000;
+    background-position: center;
+    vertical-align: middle;
+ -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.wc-project-details.banner .button-wrapp a:last-child i{
+    background: url(../img/bg-project-details-button-2.png) no-repeat;
+    background-color: #8c7400;
+    background-position: center;
+    vertical-align: middle;
+}
+.wc-project-details.banner .button-wrapp a:last-child:hover i{
+    background: url(../img/bg-project-details-button-2.png) no-repeat;
+    background-color: #eb0000;
+    background-position: center;
+    vertical-align: middle;
+}
+/*---------SLIDER------------------*/
+.wc-project-details .slider{
+    position: relative;
+    top:-197px;
+    z-index: 2;
+}
+.wc-project-details .slider .owl-controls{
+    position: relative;
+    width: 100%;
+}
+.wc-project-details .slider .owl-controls .owl-buttons{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: 20px;
+    outline: 0;
+    text-indent: -9999px;
+    z-index: 9999;
+    z-index: 3;
+}
+ .wc-project-details .owl-controls .owl-page,.wc-project-details .owl-controls .owl-buttons div{
+    width: 18px;
+    height: 31px;
+    background: url(../img/bg-project-details-slider-nav.png) no-repeat;
+    float: left;
+}
+.wc-project-details .slider .owl-controls .owl-buttons .owl-prev{
+    float: left;
+}
+.wc-project-details .slider .owl-controls .owl-buttons .owl-prev:hover{
+    background-position: 0px -36px;
+}
+.wc-project-details .slider .owl-controls .owl-buttons .owl-next{
+    background-position: -21px 0px;
+    float: right;
+}
+.wc-project-details .slider .owl-controls .owl-buttons .owl-next:hover{
+    background-position: -21px -36px;
+}
+.wc-project-details .slider #sync1 .owl-item{
+    box-shadow: 0 0 2px #ccc;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+}
+.wc-project-details .slider #sync2 .owl-item{
+    width: 107px!important;
+    margin-right: 10px;
+/*    padding: 4px!important;*/
+    cursor: pointer;
+}
+.wc-project-details .slider #sync2 .owl-wrapper-outer{
+    width: 343px!important;
+    margin: 0 auto;
+    z-index: 10;
+}
+.wc-project-details .slider .owl-item.synced{
+  -webkit-box-shadow: inset 0 0 0 4px #fecb2f;
+  -moz-box-shadow: inset 0 0 0 4px #fecb2f;
+  box-shadow: inset 0 0 0 4px #fecb2f;
+}
+.wc-project-details>.container>.row>div:last-child{
+    padding-top: 40px;
+}
+.wc-project-details .panel-group .panel-heading, .wc-project-details .panel-default>.panel-heading{
+    background: none;
+    border: 0;
+}
+.wc-project-details .panel-default{
+    border: 0;
+}
+
+.wc-project-details .panel-body P{
+    font-family: 'calibriregular';
+    font-size: 15px;
+    color: #565656;
+    line-height: 25px;
+}
+.wc-project-details .panel-body .dl-horizontal dt, .wc-project-details .panel-body .dl-horizontal dd{
+    text-align: left;
+    font-family: 'robotomedium';
+    font-size: 15px;
+    color: #565656;
+    font-weight: normal;
+    padding-bottom: 5px;
+    margin-left: 0;
+	float: left;
+	width: 50%;
+}
+.wc-project-details .panel-body .dl-horizontal dd{
+    color: #333333;
+}
+.wc-project-details .panel-body>.row{
+    padding-top: 30px;
+}
+.wc-project-details .panel-title>a, .wc-project-details  .panel-title>small, .wc-project-details  .panel-title>.small, .wc-project-details .panel-title>small>a, .wc-project-details  .panel-title>.small>a{
+    width: 100%;
+    background: url(../img/bg-project-details-accordattion.png) no-repeat; 
+    background-position: right center;
+    background-origin: border-box;
+    display: -webkit-inline-box;
+    display: block;
+    padding: 3px 0;
+    color: #fecb2f;
+    text-align: left;
+}
+.wc-project-details .panel-title>a.collapsed{
+    background: url(../img/bg-project-details-accordattion-plus.png) no-repeat;   
+    background-position: right center;
+    color: #333333;
+}
+.wc-project-details .slider .owl-carousel .fancy-wrp-new{
+    display: block;
+    width: 59px;
+    height: 59px;
+    background: url(../img/bg-project-details-zoom.png) no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 9;
+}
+
+.wc-project-details .panel-body h1{
+    font-family: 'robotoregular'; font-size: 18px; color: #333333;
+    padding: 20px 0 0 0;
+}
+.wc-project-details .panel-body h2{
+    font-family: 'robotolight'; font-size: 18px; color: #333333;
+    padding: 0 0 10px 0;
+    text-transform: capitalize;
+}
+.wc-project-details .panel-body h3{
+    font-family: 'calibriregular'; font-size: 15px; color: #565656;
+}
+.wc-project-details .panel-body>.specification>.row{
+    border-bottom: 1px dotted #c5c5c5;
+    padding: 20px 0;
+}
+
+.wc-project-details .panel-body .floor-plan h1{
+	
+	margin-bottom: 10px;
+    font-family: 'robotoregular'; font-size: 16px; color: #525252; text-align: left;
+}
+.wc-project-details .panel-body .floor-plan i{
+    font-family: 'open_sansregular'; color: #fff; font-size: 12px;
+    padding: 5px 15px;
+    background: #bababa;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.wc-project-details .panel-body .floor-plan>.row{
+    padding-bottom: 25px;
+}
+.wc-project-details .panel-body .floor-plan .img-wrapper{
+    position: relative;
+    border: 1px solid #e5e5e5;
+	margin-bottom: 15px !important;
+}
+.wc-project-details .panel-body .floor-plan .img-wrapper span, .wc-project-details .panel-body .location .img-wrapper span{
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: url(../img/bg-6-zoomer.png) no-repeat;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+}
+.fancybox-overlay{
+    background: url(../img/fancybox_overlay.png);
+}
+.wc-project-details .panel-body .location .map_canvas{
+    width: 100%;
+    height: 242px;
+}
+.wc-project-details .panel-body .location .img-wrapper{
+    box-sizing: border-box;
+}
+.wc-project-details .panel-body .location .img-wrapper img{
+    max-width: 100%
+}
+.wc-project-details .panel-body .location .img-wrapper a{
+    bottom:0;
+    right: 13px;
+}
+.wc-project-details .panel-body .location>.row{
+    padding-bottom: 15px;
+}
+.wc-project-details .panel-body .status>.row{
+    padding-bottom: 30px;
+}
+.wc-project-details .panel-body .status .img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.wc-project-details .panel-body .status .np-overlay{
+    width: 62px;
+    height: 62px;
+    background: url(../img/bg-9.png) no-repeat;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.wc-project-details .panel-body .status .np-overlay:hover{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.wc-project-details .panel-body .status .img-wrapper:hover .np-overlay{
+    display: block;
+}
+.wc-project-details .panel-body .status .img-wrapper .date{
+    width: 55px; 
+    height: 55px;
+    background: #000;
+    opacity: .9;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3
+}
+.wc-project-details .panel-body .status .img-wrapper:hover .date{
+    display: none;
+}
+.wc-project-details .panel-body .status .img-wrapper .date h1{
+    font-family: 'open_sanssemibold';  color: #fff; font-size: 28px;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+.wc-project-details .panel-body .status .img-wrapper .date h2{
+    font-family: 'open_sanssemibold';  color: #fff; font-size: 14px;
+    text-align: center;
+}
+
+
+.wc-project-details .panel-body .status .overlay-i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    vertical-align: middle;
+    z-index: 2;
+    opacity: .5;
+}
+
+.wc-project-details .panel-body .wc-amenities>.row>div{
+    margin: 0;
+    padding: 15px 0 0 0;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+    position: relative;
+}
+
+.wc-project-details .panel-body .wc-amenities>.row>div:last-child{
+	border:none;
+}
+
+.wc-project-details .panel-body .wc-amenities>.row{
+   /* margin: 10px 0;*/
+   border-bottom: 1px solid #e5e5e5;
+}
+
+.wc-project-details .panel-body .wc-amenities>.row:last-child{
+	border:none;
+}
+
+.wc-project-details .panel-body .wc-amenities>.row>div>.box{
+    margin: 0 10px;
+	height: 130px;
+	overflow:hidden;
+   /* border-bottom: 1px solid #e5e5e5;*/
+    padding-bottom: 40px;
+}
+.wc-project-details .panel-body .wc-amenities>.row>div>.box>.img-wrapper{
+    width: 62px;
+    margin: 0 auto;
+}
+.wc-project-details .panel-body .wc-amenities>.row>div>.box>.img-wrapper img{
+    max-width: 100%;
+}
+.wc-project-details .panel-body .wc-amenities p{
+    font-family: 'robotolight'; font-size: 15px; color: #575757;
+    text-align: center;
+    line-height: normal;
+    padding-top: 10px;
+}
+.wc-project-details .panel-body .wc-amenities>.row:last-child .box{
+    border-bottom: 0;
+}
+
+@media (max-width:766px){
+.wc-project.details .box .bottom a {
+	font-family: 'robotoregular';
+	font-size: 15px;
+	color: #656565;
+	position: relative;
+	cursor: pointer;
+	width: 100%;
+	display: block;
+	background: url(../img/bg-sprite.png) no-repeat;
+	line-height: 22px;
+	background-position: 105px -227px;
+	padding-left: 4%;
+}
+}
+
+/*----------------------------------------------------
+		END OF PROJECT DETAILS
+----------------------------------------------------*/
+
+
+/*----------------------------------------------------
+					   PROJECT
+----------------------------------------------------*/
+
+
+.wc-project.banner>.container>.row, .wc-project.banner>.container>.row>div{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*-----------Tab-----------*/
+
+.wc-project.details{
+    position: relative;
+    top:10px;
+}
+.wc-project.details .tab-content>.tab-pane>.row>div{
+    position: relative;
+}
+.wc-project.details .tab-content{
+    padding-top: 65px;
+}
+.wc-project.details .tab-content>.tab-pane>.row{
+    padding-bottom: 40px;
+}
+.wc-project.details .box-o{
+    padding: 0 0px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  /* width: 95.8%;*/
+}
+.wc-project.details .box{
+	/*width: 104.6%;
+    border: 1px solid #ebebeb;
+    padding-top: 0px;
+    margin-top: 72%;*/
+    cursor: pointer;
+   background: #FFFFFF;
+}
+.wc-project.details .box-o .img-wrapper{
+    position: relative;
+    border: 1px solid #ebebeb;
+}
+
+
+.wc-project.details .box-o .img-wrapper .info h:first-child{
+    font-family: 'robotomedium';
+    font-size: 13px;
+    color: #776200;
+    padding: 5px 10px;
+    background: #96ae19;
+    float: left;
+}
+
+.wc-project.details .box-o .img-wrapper .info h:first-child i{
+	background:url(../img/ico-project.png) no-repeat;
+	width:25px;
+	height:18px;
+	display:block;
+}
+
+.wc-project.details .box-o .info h:nth-last-child(1){
+    font-family: 'robotoregular';
+    font-size: 14px;
+    color: #1d7ec1;
+    padding: 5px 15px;
+    background: #fff;
+    float: left;
+    position: relative;
+}
+.wc-project.details .box-o .img-wrapper .info h:nth-last-child(1):before{
+    content: " ";
+width: 0;
+height: 0;
+border-top: 12px solid transparent;
+border-bottom: 16px solid transparent;
+border-left: 11px solid #93ac12;
+position: absolute;
+left: 0;
+vertical-align: middle;
+z-index: 2;
+left: 0px;
+top: 1px;
+}
+/* new */
+.wc-project.details .box-o .img-wrapper .info1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.wc-project.details .box-o .img-wrapper .info1 h:first-child{
+    font-family: 'robotomedium';
+    font-size: 13px;
+    color: #776200;
+    padding: 5px 10px;
+    background: #ffe400;
+    float: left;
+}
+.wc-project.details .box-o .info1 h:nth-last-child(1){
+    font-family: 'robotomedium';
+    font-size: 13px;
+    color: #fff;
+    padding: 5px 10px;
+    background: #ff0000;
+    float: left;
+    position: relative;
+}
+.wc-project.details .box-o .img-wrapper .info1 h:nth-last-child(1):before{
+    content: " ";
+	width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent; 
+	border-right: 8px solid #ff0000; 
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+    z-index: 2;
+    left: -4px
+}
+/* new*/
+.wc-project.details .box .details{
+    padding: 15px 20px;
+}
+.wc-project.details .box .details h1{
+    font-family: 'robotolight';
+    font-size: 20px;
+    color: #3c3c3c;
+    padding: 30px 0 20px 0;
+}
+.wc-project.details .box .details p{
+    font-family: 'robotolight';
+    font-size: 15px;
+    color: #656565;
+}
+.wc-project.details .box .details p i{
+    width: 16px;
+    height: 20px;
+    display: block;
+    float: left;
+    background: url(../img/bg-sprite.png) no-repeat;
+    background-position: -8px -201px;
+    margin-right: 10px;
+}
+.wc-project.details .box .bottom{
+    width: 100%
+}
+.wc-project.details .box .bottom>.row>div,.wc-project.details .box .bottom>.row{
+    margin: 0;
+    padding: 0;
+}
+.wc-project.details .box .bottom>.row>div{
+    padding: 10px 5px;
+width: 32%;
+float: right;
+
+}
+.wc-project.details .box .bottom>.row>div:first-child{
+	padding: 10px 15px;
+  width: 67.98%;
+float: left;
+border-right: 1px solid #DADADA;
+
+}
+.wc-project.details .box .bottom>.row{
+    border-bottom: 1px solid #DADADA;
+margin-top: 0px;
+background: #EFEFEF;
+height: 38px;
+
+}
+.wc-project.details .box .bottom p{
+    font-family: 'robotoregular'; font-size: 15px; color: #656565;
+    text-align: center;
+}
+.wc-project.details .box .bottom p i.sold{
+    font-family: 'robotomedium'; color: #ff0000; font-style: normal;
+}
+.wc-project.details .box .bottom p i.completed{
+    font-family: 'robotomedium'; color: #47bc3b; font-style: normal;
+}
+
+
+
+} */
+
+
+
+
